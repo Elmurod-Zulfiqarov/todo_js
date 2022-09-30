@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Elements</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-xl-4">
+				<div class="card">
+					<div class="card-header bg-dark text-white text-center">
+						<h4>Add Student</h4>
+					</div>
+					<div class="card-body">
+						<form name="studentForm">
+							<input type="text"
+									class="form-control mb-2"
+									name="firstName"
+									placeholder="enter firstName">
+							<input type="text"
+									class="form-control mb-2"
+									name="lastName"
+									placeholder="enter lastName">
+
+							<input type="number"
+									class="form-control mb-2"
+									name="age"
+									placeholder="enter age">
+
+							<input type="text"
+									class="form-control mb-2"
+									name="group"
+									placeholder="enter group">
+							<select name="status" class="form-control mb-2">
+								<option selected disabled>select status</option>
+								<option value="grand">grand</option>
+								<option value="shartnoma">contract</option>
+							</select>
+							<button id="addBtn" type="button" class="btn btn-dark w-100 mt-3">
+								add student
+							</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-8">
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th>TR</th>
+							<th>FirstName</th>
+							<th>LastName</th>
+							<th>Age</th>
+							<th>Group</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>	
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
